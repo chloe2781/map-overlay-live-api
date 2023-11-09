@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ekL-IA-ChS">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="UeD-xF-vvt">
+            <objects>
+                <viewController id="ekL-IA-ChS" customClass="mapViewController" customModule="hw4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Iy-xj-eFz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua6-1e-jWk">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USA ZIP CODE AREA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eib-pL-q6l">
+                                <rect key="frame" x="16" y="83" width="361" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="26"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.70174319730000001" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on the map to change the boundaries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9A8-rq-CAl">
+                                <rect key="frame" x="16" y="123" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhk-4f-BYb">
+                                <rect key="frame" x="86" y="738" width="232" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70174319730000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.70174319730000001" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hpq-SU-h5I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eib-pL-q6l" firstAttribute="leading" secondItem="Hpq-SU-h5I" secondAttribute="leading" constant="16" id="2Ke-tf-4NE"/>
+                            <constraint firstItem="Hpq-SU-h5I" firstAttribute="bottom" secondItem="ua6-1e-jWk" secondAttribute="bottom" constant="-34" id="5Eh-uV-GIL"/>
+                            <constraint firstItem="ua6-1e-jWk" firstAttribute="leading" secondItem="Hpq-SU-h5I" secondAttribute="leading" id="7h7-oy-9VR"/>
+                            <constraint firstItem="9A8-rq-CAl" firstAttribute="centerX" secondItem="Hpq-SU-h5I" secondAttribute="centerX" id="Nau-ka-3qu"/>
+                            <constraint firstItem="eib-pL-q6l" firstAttribute="centerX" secondItem="Hpq-SU-h5I" secondAttribute="centerX" id="RIs-Q2-dhW"/>
+                            <constraint firstItem="Hpq-SU-h5I" firstAttribute="bottom" secondItem="Nhk-4f-BYb" secondAttribute="bottom" constant="38" id="WeY-UJ-1CI"/>
+                            <constraint firstItem="ua6-1e-jWk" firstAttribute="centerY" secondItem="Hpq-SU-h5I" secondAttribute="centerY" constant="-12.5" id="Ynn-XZ-tLc"/>
+                            <constraint firstItem="9A8-rq-CAl" firstAttribute="leading" secondItem="2Iy-xj-eFz" secondAttribute="leading" constant="16" id="Za5-uL-OIk"/>
+                            <constraint firstItem="9A8-rq-CAl" firstAttribute="top" secondItem="eib-pL-q6l" secondAttribute="bottom" constant="7.6666666666666572" id="aFK-Ki-Byj"/>
+                            <constraint firstItem="eib-pL-q6l" firstAttribute="top" secondItem="Hpq-SU-h5I" secondAttribute="top" constant="24" id="nQ8-H8-dKH"/>
+                            <constraint firstItem="Nhk-4f-BYb" firstAttribute="centerX" secondItem="Hpq-SU-h5I" secondAttribute="centerX" constant="5.5" id="ote-WR-pBq"/>
+                            <constraint firstItem="ua6-1e-jWk" firstAttribute="centerX" secondItem="Hpq-SU-h5I" secondAttribute="centerX" id="qzF-IW-4iz"/>
+                            <constraint firstItem="Nhk-4f-BYb" firstAttribute="leading" secondItem="2Iy-xj-eFz" secondAttribute="leading" constant="86" id="vuh-h1-Aqj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ua6-1e-jWk" id="BaB-sd-U5c"/>
+                        <outlet property="zipcode" destination="Nhk-4f-BYb" id="OdC-Gs-O8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6m-TB-SBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-663.38028169014092"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
